@@ -5,12 +5,19 @@
   gap: 20px;
   background: transparent;
   color: white;
-  position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 1000;
   padding: 30px 5%;
+}
+
+.header.sticky {
+  position: sticky
+}
+
+.header.fixed {
+  position: fixed;
 }
 
 .header.scrolled {

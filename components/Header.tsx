@@ -5,7 +5,12 @@ import Image from "next/image";
 import Link from "next/link";
 import logo from "../src/assets/logo-orange-horizontal.svg";
 
-const Header: FC = () => {
+interface HeaderProps {
+	scroll: boolean;
+	sticky: boolean;
+}
+
+const Header: FC<HeaderProps> = ({ scroll, sticky }) => {
 	const [scrolled, setScrolled] = useState<boolean>(false);
 
 	function handleScroll() {
@@ -17,16 +22,21 @@ const Header: FC = () => {
 	}
 
 	useEffect(() => {
-		window.addEventListener("scroll", handleScroll);
+		if (scroll) {
+			window.addEventListener("scroll", handleScroll);
+		}
 		return () => {
-			window.removeEventListener("scroll", handleScroll);
+			if (scroll) {
+				window.removeEventListener("scroll", handleScroll);
+			}
 		};
 	}, []);
 
-	const scrollStyle = scrolled ? styles.scrolled : "";
+	const scrollStyle = scrolled || scroll === false ? styles.scrolled : "";
+	const pos = sticky ? styles.sticky : styles.fixed;
 
 	return (
-		<header className={`${styles.header} ${scrollStyle}`}>
+		<header className={`${styles.header} ${scrollStyle} ${pos}`}>
 			<Link href="/" className={styles.logo_container}>
 				<Image src={logo} alt="" className={styles.logo} />
 			</Link>

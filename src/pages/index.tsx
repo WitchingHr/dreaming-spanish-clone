@@ -22,7 +22,7 @@ import Image from "next/image";
 export default function Home() {
 	return (
 		<>
-			<Header />
+			<Header scroll={true} sticky={false} />
 			<main>
 				<section
 					style={{

@@ -1,0 +1,118 @@
+.hero_section {
+  position: relative;
+}
+
+.hero {
+  object-fit: cover;
+  width: 100%;
+}
+
+.abs {
+  position: absolute;
+  left: 0%;
+  top: auto;
+  right: 0%;
+  bottom: 4px;
+  padding: 20px 120px;
+  background-color: rgba(255, 147, 0, 0.6);
+}
+
+.hero_heading {
+  color: white;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 4em;
+  line-height: 1.25;
+  font-weight: 700;
+}
+
+.gray_bg {
+  background-color: #f2f4f5;
+}
+
+.container {
+  max-width: 1440px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 30px 8%;
+}
+
+.layout_grid {
+  display: grid;
+  grid-auto-columns: 1fr;
+  /* grid-template-columns: 1fr 1fr; */
+  /* grid-template-rows: auto auto; */
+  gap: 16px;
+}
+
+.grid_8 {
+  grid-template-columns: 1.4fr 1fr;
+  grid-template-rows: auto;
+}
+
+.section_1 {
+  padding-top: 55px;
+  padding-bottom: 55px;
+}
+
+.section_2 {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.section_4,
+.section_3 {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.h2 {
+  margin-top: 0px;
+  margin-bottom: 30px;
+  font-size: 42px;
+  line-height: 1.3;
+  font-weight: 700;
+}
+
+.f24 {
+  font-family: sans-serif;
+  font-size: 24px;
+  line-height: 43px;
+  margin-bottom: 0;
+  font-weight: 300;
+  margin-top: 0;
+}
+
+.mt2 {
+  margin-top: 20px;
+}
+
+.black_text {
+  font-weight: 700;
+  color: black;
+}
+
+.orange_txt {
+  color: #ff9300;
+  font-weight: 700;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.italics {
+  font-style: italic;
+  font-weight: 700;
+}
+
+.face {
+  width: 100%;
+  height: auto;
+}
+
+.thai {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
