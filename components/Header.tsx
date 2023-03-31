@@ -27,9 +27,9 @@ const Header: FC = () => {
 
 	return (
 		<header className={`${styles.header} ${scrollStyle}`}>
-			<div className={styles.logo_container}>
+			<Link href="/" className={styles.logo_container}>
 				<Image src={logo} alt="" className={styles.logo} />
-			</div>
+			</Link>
 			<div className={styles.header_links}>
 				<Link href="/about" className={styles.header_link}>
 					About

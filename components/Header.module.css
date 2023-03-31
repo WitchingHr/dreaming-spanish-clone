@@ -1,5 +1,6 @@
 .header {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   gap: 20px;
   background: transparent;
@@ -35,8 +36,8 @@
 }
 
 .header_links {
-  flex: 1;
-  flex-shrink: 0;
+  flex: initial;
+  flex-shrink: 1;
   display: flex;
   justify-content: space-around;
   align-items: center;
