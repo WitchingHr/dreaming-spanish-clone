@@ -3,6 +3,7 @@ import styles from "../styles/About.module.css";
 
 import Image from "next/image";
 import Link from "next/link";
+import Head from "next/head";
 
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
@@ -14,9 +15,12 @@ import thailand from "../assets/pablo-thai.png";
 const About: FC = () => {
 	return (
 		<>
+			<Head>
+				<title>About Dreaming Spanish: Our Founding Story</title>
+			</Head>
 			<Header scroll={false} sticky={true} />
 			<main>
-				<div className={styles.hero_section}>
+				<div className={`${styles.hero_section} ${styles.gray_bg}`}>
 					<Image src={hero} alt="" className={styles.hero} />
 					<div className={styles.abs}>
 						<h1 className={styles.hero_heading}>
@@ -158,7 +162,9 @@ const About: FC = () => {
 								using this idea.
 							</p>
 						</div>
-						<Image src={thailand} alt="" className={styles.thai} />
+						<div className={styles.thai_wrapper}>
+              <Image src={thailand} alt="" className={styles.thai} />
+            </div>
 						<div>
 							<p className={styles.f24}>
 								This line of inquiry eventually brought Pablo to Thailand. He

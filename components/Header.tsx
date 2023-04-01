@@ -36,7 +36,7 @@ const Header: FC<HeaderProps> = ({ scroll, sticky }) => {
 	const pos = sticky ? styles.sticky : styles.fixed;
 
 	return (
-		<header className={`${styles.header} ${scrollStyle} ${pos}`}>
+		<nav className={`${styles.header} ${scrollStyle} ${pos}`}>
 			<Link href="/" className={styles.logo_container}>
 				<Image src={logo} alt="" className={styles.logo} />
 			</Link>
@@ -61,7 +61,7 @@ const Header: FC<HeaderProps> = ({ scroll, sticky }) => {
 					<button className={styles.start_button}>START LEARNING</button>
 				</Link>
 			</div>
-		</header>
+		</nav>
 	);
 };
 

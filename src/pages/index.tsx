@@ -4,6 +4,7 @@ import React from "react";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import Link from "next/link";
+import Head from "next/head";
 
 // Images
 import hero1 from "../assets/hero1.png";
@@ -22,6 +23,9 @@ import Image from "next/image";
 export default function Home() {
 	return (
 		<>
+			<Head>
+				<title>Dreaming Spanish: Learn with Comprehensible Input</title>
+			</Head>
 			<Header scroll={true} sticky={false} />
 			<main>
 				<section
