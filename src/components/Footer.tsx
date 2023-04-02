@@ -52,9 +52,6 @@ const Footer: FC<FooterProps> = ({ gray }) => {
 					<Link href="/faq" className={styles.footer_link}>
 						FAQ
 					</Link>
-					<Link href="/blog" className={styles.footer_link}>
-						Blog
-					</Link>
 				</div>
 				<div className={styles.footer_column}>
 					<p className={styles.footer_title}>Company</p>

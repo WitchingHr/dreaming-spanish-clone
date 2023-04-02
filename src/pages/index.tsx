@@ -37,7 +37,7 @@ export default function Home() {
 					<div className={`${styles.hero_one_wrapper} ${styles.container}`}>
 						<div className={styles.welcome_message}>
 							<h1 className={styles.heading}>
-								Learn <span style={{ textDecoration: "underline" }}>Spanish</span>{" "}
+								Learn <span style={{ borderBottom: "2px solid" }}>Spanish</span>{" "}
 								in the most<span style={{ display: "block" }}> </span> natural and
 								effective way
 							</h1>
@@ -155,7 +155,7 @@ export default function Home() {
 					<div className={`${styles.container} ${styles.reviews}`}>
 						<h1 className={styles.testimonials_heading}>
 							What our{" "}
-							<span style={{ textDecoration: "underline" }}>students</span> have
+							<span style={{ borderBottom: "2px solid" }}>students</span> have
 							to say...
 						</h1>
 						<div className={styles.testimonials_wrapper}>

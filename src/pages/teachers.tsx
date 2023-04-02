@@ -1,14 +1,16 @@
 import React, { FC } from "react";
-import styles from "../styles/About.module.css";
+import styles from "../styles/Resources.module.css";
 
 import Image from "next/image";
-import Link from "next/link";
 import Head from "next/head";
 
+// Components
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import TeachersCard from "../components/TeachersCard";
+import Section from "@/components/Section";
 
+// Images
 import hero from "../assets/teachers-hero.jpg";
 import Pablo from "../assets/teachers-pablo.jpg";
 import Alma from "../assets/teachers-alma.jpg";
@@ -41,37 +43,33 @@ const Teachers: FC = () => {
 						<h1 className={styles.hero_heading}>Our Content Creators</h1>
 					</div>
 				</div>
-				<section>
-					<div className={`${styles.container} ${styles.section_2}`}>
-						<div>
-							<p className={styles.f24}>
-								At <span className={styles.black_text}>Dreaming Spanish</span>,{" "}
-								our teachers don&apos;t teach in the traditional way, giving
-								grammar lessons and handing out vocabulary lists and whatnot.
-								Instead, they tell you about{" "}
-								<span className={styles.black_text}>
-									their lives, their experiences, their opinions
-								</span>
-								, and <span className={styles.black_text}>their culture</span> –
-								at every difficulty level so you that can be immersed in the
-								language wherever you are in your Spanish learning journey. Get
-								to meet them!
-							</p>
-						</div>
-					</div>
-				</section>
+        <Section size={2}>
+          <div>
+            <p className={styles.f24}>
+              At <span className={styles.black_text}>Dreaming Spanish</span>,{" "}
+              our teachers don&apos;t teach in the traditional way, giving
+              grammar lessons and handing out vocabulary lists and whatnot.
+              Instead, they tell you about{" "}
+              <span className={styles.black_text}>
+                their lives, their experiences, their opinions
+              </span>
+              , and <span className={styles.black_text}>their culture</span> –
+              at every difficulty level so you that can be immersed in the
+              language wherever you are in your Spanish learning journey. Get
+              to meet them!
+            </p>
+          </div>
+				</Section>
         <div className={styles.separator}></div>
-				<section>
-					<div className={`${styles.container} ${styles.py11}`}>
-						<div className={styles.collection_list}>
-              {teachersInfo.map((teacher, index) => (
-                <li key={index} style={{listStyle: "none"}}>
-                  <TeachersCard teacher={teacher.teacher} image={teacher.image} country={teacher.country} bio={teacher.bio} />
-                </li>
-              ))}
-						</div>
-					</div>
-				</section>
+        <Section size={11}>
+          <div className={styles.collection_list}>
+            {teachersInfo.map((teacher, index) => (
+              <li key={index} style={{listStyle: "none"}}>
+                <TeachersCard teacher={teacher.teacher} image={teacher.image} country={teacher.country} bio={teacher.bio} />
+              </li>
+            ))}
+          </div>
+				</Section>
 			</main>
       <Footer gray />
 		</>

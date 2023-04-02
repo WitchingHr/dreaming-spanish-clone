@@ -136,12 +136,12 @@
   margin-top: 0;
 }
 
-.py8 {
+.section_8 {
   padding-top: 80px;
   padding-bottom: 80px;
 }
 
-.py11 {
+.section_11 {
   padding-top: 110px;
   padding-bottom: 110px;
 }
@@ -172,7 +172,7 @@
 }
 
 .image {
-  border: 1px solid black;
+ /* border: 1px solid black; */
   max-width: 100%;
   height: auto;
 }
@@ -204,11 +204,6 @@
 .italics {
   font-style: italic;
   font-weight: 700;
-}
-
-.face {
-  width: 100%;
-  height: auto;
 }
 
 .thai_wrapper {
@@ -297,6 +292,7 @@
   font-size: 36px;
   line-height: 65px;
   font-weight: 400;
+  font-family: sans-serif;
 }
 
 .state {

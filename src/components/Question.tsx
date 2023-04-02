@@ -1,6 +1,6 @@
 import React, { FC, PropsWithChildren, useState } from "react";
 
-import styles from "../styles/About.module.css";
+import styles from "../styles/Resources.module.css";
 
 interface QuestionProps {
 	question: string;

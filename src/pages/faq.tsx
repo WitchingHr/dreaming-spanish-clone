@@ -8,7 +8,7 @@ import Footer from "../components/Footer";
 import Question from "../components/Question";
 
 // Styles
-import styles from "../styles/About.module.css";
+import styles from "../styles/Resources.module.css";
 
 // Images
 import circle from "../assets/circle.svg";
