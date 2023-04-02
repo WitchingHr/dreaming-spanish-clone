@@ -18,7 +18,7 @@ const About: FC = () => {
 			<Head>
 				<title>About Dreaming Spanish: Our Founding Story</title>
 			</Head>
-			<Header scroll={false} sticky={true} />
+			<Header sticky gray />
 			<main>
 				<div className={`${styles.hero_section} ${styles.gray_bg}`}>
 					<Image src={hero} alt="" className={styles.hero} />

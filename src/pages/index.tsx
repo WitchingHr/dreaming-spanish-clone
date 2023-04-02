@@ -26,7 +26,7 @@ export default function Home() {
 			<Head>
 				<title>Dreaming Spanish: Learn with Comprehensible Input</title>
 			</Head>
-			<Header scroll={true} sticky={false} />
+			<Header home scroll />
 			<main>
 				<section
 					style={{

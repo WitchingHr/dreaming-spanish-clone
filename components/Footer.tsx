@@ -4,9 +4,15 @@ import Link from "next/link";
 import styles from "./Footer.module.css";
 import logo from "../src/assets/logo-small.svg";
 
-const Footer: FC = () => {
+interface FooterProps {
+	gray?: boolean;
+}
+
+const Footer: FC<FooterProps> = ({ gray }) => {
+	const grayStyle = gray ? styles.gray : "";
+
 	return (
-		<footer className={styles.footer}>
+		<footer className={`${styles.footer} ${grayStyle}`}>
 			<div className={styles.footer_grid}>
 				<div>
 					<Image

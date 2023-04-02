@@ -12,16 +12,16 @@
   padding: 30px 5%;
 }
 
+.gray {
+  background-color: #f2f4f5 !important;
+}
+
 .header.sticky {
   position: sticky
 }
 
 .header.fixed {
   position: fixed;
-}
-
-.header.scrolled {
-  border-bottom: 1px solid rgb(230, 230, 230);
 }
 
 .logo_container {
@@ -57,8 +57,12 @@
   flex-shrink: 0;
 }
 
+.home {
+  border-bottom: 1px solid rgb(230, 230, 230);
+}
+
 .scrolled {
-  background: white !important;
+  background: white;
   color: black !important;
 }
 

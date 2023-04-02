@@ -141,6 +141,11 @@
   padding-bottom: 80px;
 }
 
+.py11 {
+  padding-top: 110px;
+  padding-bottom: 110px;
+}
+
 .mt1 {
   margin-top: 10px;
 }
@@ -213,4 +218,26 @@
 .thai {
   margin-top: 40px;
   margin-bottom: 40px;
+}
+
+.separator {
+  width: 60%;
+  height: 1px;
+  max-width: 680px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #000;
+  color: #000;
+}
+
+.collection_list {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 30px;
+  grid-row-gap: 50px;
+  -ms-grid-columns: minmax(200px, 1fr) minmax(200px, 1fr) minmax(200px, 1fr) minmax(200px, 1fr);
+  grid-template-columns: minmax(200px, 1fr) minmax(200px, 1fr) minmax(200px, 1fr) minmax(200px, 1fr);
+  -ms-grid-rows: auto auto;
+  grid-template-rows: auto auto;
 }
