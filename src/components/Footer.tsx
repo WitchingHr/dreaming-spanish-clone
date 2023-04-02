@@ -2,7 +2,7 @@ import React, { FC } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./Footer.module.css";
-import logo from "../src/assets/logo-small.svg";
+import logo from "../assets/logo-small.svg";
 
 interface FooterProps {
 	gray?: boolean;

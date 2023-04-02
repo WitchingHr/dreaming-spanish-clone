@@ -5,8 +5,8 @@ import Image from "next/image";
 import Link from "next/link";
 import Head from "next/head";
 
-import Header from "../../components/Header";
-import Footer from "../../components/Footer";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 import hero from "../assets/about-hero.png";
 import pablo from "../assets/pablo-face.png";
 import japan from "../assets/pablo-japan.png";

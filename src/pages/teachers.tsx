@@ -5,9 +5,9 @@ import Image from "next/image";
 import Link from "next/link";
 import Head from "next/head";
 
-import Header from "../../components/Header";
-import Footer from "../../components/Footer";
-import TeachersCard from "../../components/TeachersCard";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import TeachersCard from "../components/TeachersCard";
 
 import hero from "../assets/teachers-hero.jpg";
 import Pablo from "../assets/teachers-pablo.jpg";
@@ -36,13 +36,13 @@ const Teachers: FC = () => {
 			<Header sticky gray />
 			<main>
 				<div className={styles.hero_section}>
-					<Image src={hero} alt="" className={styles.hero} />
+					<Image src={hero} alt="" className={styles.hero} quality={100} />
 					<div className={styles.abs}>
 						<h1 className={styles.hero_heading}>Our Content Creators</h1>
 					</div>
 				</div>
 				<section>
-					<div className={`${styles.container} ${styles.section_1}`}>
+					<div className={`${styles.container} ${styles.section_2}`}>
 						<div>
 							<p className={styles.f24}>
 								At <span className={styles.black_text}>Dreaming Spanish</span>,{" "}

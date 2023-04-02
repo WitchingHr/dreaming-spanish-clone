@@ -5,7 +5,7 @@ import Link from "next/link";
 
 import styles from "./TeachersCard.module.css";
 
-import arrow from "../src/assets/arrow.svg";
+import arrow from "../assets/arrow.svg";
 
 interface TeachersCardProps {
 	teacher: string;
